@@ -19,6 +19,9 @@ $.vscode/
 .DS_Store
 Thumbs.db
 
+# VSCode工作区文件
+.code-workspace
+
 # 数据文件 - 根据实际情况决定
 # 如果数据文件很大或包含敏感信息，取消下面两行的注释
 # data/

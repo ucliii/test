@@ -44,7 +44,7 @@ def wavelet_denoise(signal, wavelet='sym8', level=None, threshold_type='soft'):
     # 自动计算合适的分解层数
     if level is None:
         max_level = pywt.dwt_max_level(len(signal), wavelet)
-        desired_level = int(np.log2(sampling_rate / (2 * 1.5)))
+        desired_level = int(np.log2(sampling_rate / (2 * 3)))
         level = min(max_level, desired_level, 6)
     
     # 小波分解
